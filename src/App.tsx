@@ -5,27 +5,59 @@ import {
     Route,
     Link
 } from "react-router-dom";
-// import logo from './logo.svg';
 import './App.css';
 import {addUser} from './component/models/addUser';
-import {welcome} from './component/welcome';
+import {Edit} from './component/models/Edit';
+import {useState} from 'react';
+import {Delete} from './component/models/Delete';
+
 
 function App() {
-  return (
+              const [isShowingedit, toggleedit] = useState(false);
+              const [isShowingdelete, toggledelete] = useState(false);
+    function editToggle(){
+        toggleedit(true);
+        toggledelete(false);
+
+    }
+
+    function deleteToggle(){
+        toggleedit(false);
+        toggledelete(true);
+
+    }
+
+
+
+    return (
       <div>
       <div className="App">
-          {/*<header className="App-header">*/}
-          {/*</header>*/}
-
           <Router>
+              <nav>
+                  <ul>
+                      <li>
+                          <Link to="/adduser">Add User</Link>
+                      </li>
+                  </ul>
+              </nav>
+
               <div>
 
                   <Switch>
-                  <Route exact path='/' component={welcome} />
               <Route exact path='/adduser' component={addUser} />
                   </Switch>
               </div>
           </Router>
+          <button className="button-default" onClick={editToggle}>Edit</button>
+          <Edit
+              isShowingedit={isShowingedit}
+
+          />
+          <button className="button-default" onClick={deleteToggle}>Delete</button>
+          <Delete
+              isShowingdelete={isShowingdelete}
+          />
+
       </div>
       </div>
 );

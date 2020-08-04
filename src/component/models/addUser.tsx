@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 
 interface AdduserProps {
@@ -11,7 +12,8 @@ interface AdduserProps {
 //     <h1>My Website Heading</h1>
 
 export const addUser: React.FC<AdduserProps> =
-    () => (
+    () => {
+    return(
         <div className="adduser">
             <form>
                 <label htmlFor="fname">First name:</label><br/>
@@ -21,10 +23,10 @@ export const addUser: React.FC<AdduserProps> =
                 <label htmlFor="age">Age :</label><br/>
                 <input type="text" id="age" name="age"/><br/>
                 <label htmlFor="designation">Designation :</label><br/>
-                <input type="text" id="designation" name="designation"/>
-
+                <input type="text" id="designation" name="designation"/><br/>
+                <Link to="/"><button>Add</button></Link><br/><br/><br/><br/>
 
             </form>
 
         </div>
-    )
+    )};
