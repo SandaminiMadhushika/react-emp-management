@@ -6,7 +6,7 @@ import {
     Link
 } from "react-router-dom";
 import './App.css';
-import {addUser} from './component/models/addUser';
+import Add from './component/models/addUser';
 import {Edit} from './component/models/Edit';
 import {useState} from 'react';
 import {Delete} from './component/models/Delete';
@@ -15,9 +15,13 @@ import {Delete} from './component/models/Delete';
 function App() {
               const [isShowingedit, toggleedit] = useState(false);
               const [isShowingdelete, toggledelete] = useState(false);
+    const [isShowingeditform, toggleeditform] = useState(false);
+
+
     function editToggle(){
         toggleedit(true);
         toggledelete(false);
+        toggleeditform(false);
 
     }
 
@@ -26,7 +30,6 @@ function App() {
         toggledelete(true);
 
     }
-
 
 
     return (
@@ -44,7 +47,7 @@ function App() {
               <div>
 
                   <Switch>
-              <Route exact path='/adduser' component={addUser} />
+              <Route exact path='/adduser' component={Add} />
                   </Switch>
               </div>
           </Router>

@@ -1,6 +1,4 @@
 
-9
-	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
 =
 src/index.tsx,5/a/5ab44fe33ca96299f51ad4778a73e425b92bf439
 =
@@ -27,11 +25,20 @@ A
 	yarn.lock,5/3/53585a096fe3a3b96321113856ae62602995a33b
 @
 src/App.test.tsx,1/f/1fc1c06a0502bf303f8ba35e530938a98e7e35b2
-I
-src/component/welcome.tsx,e/3/e3687f7f3ac15c9d8040066d01b87899823502c3
 P
  src/component/models/addUser.tsx,e/1/e1809b94d592f92b270972cbcc70017b95791774
-S
-#src/component/models/deleteUser.tsx,b/0/b0059285c194fba07e2ce24e7e5ccb27d95f2ac7
+N
+src/component/models/Modal.css,c/5/c59bf0de105e92baad667bb065283e02a619bee0
+7
+READ.md,0/1/013e1340e110b6c8431d68ae7cbd0cb574834401
+:
+
+.gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
+O
+src/component/models/Delete.tsx,4/8/48eed90d43c031c401764eef8a03a46409dac393
+M
+src/component/models/Edit.tsx,b/1/b1f7042aad3f1532c23cb63279cf4e072df28c80
+P
+ src/component/models/Employe.tsx,9/b/9be554050a989f010daaca94409d2c6c514fa00a
 Q
-!src/component/models/editUser.tsx,8/9/890edb2cd35df591192c9be6b84ad77d880151d0
+!src/component/models/EditForm.tsx,e/5/e51a58a7e71f3d9a1d623ff671b9fda4960a4865
